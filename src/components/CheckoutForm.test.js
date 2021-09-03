@@ -37,9 +37,7 @@ test("shows success message on submit with form details", () => {
     const success = screen.getByTestId("successMessage");
     
     expect(success).toBeInTheDocument();
-    expect(success).toHaveTextContent('Someone Somewhere')
-    expect(success).toHaveTextContent('Over The Rainbow')
-    expect(success).toHaveTextContent('Way Up High, HI 12345')
-
-    
+    expect(success).toHaveTextContent('Someone Somewhere');
+    expect(success).toHaveTextContent('Over The Rainbow');
+    expect(success).toHaveTextContent('Way Up High, HI 12345');
 });
